@@ -171,7 +171,7 @@
                             </div>
                             <div class="icon-content position-relative mb-3 ms-5"></div>
                         </div>
-                        <span class="number py-5" data-val="100">000</span><br>
+                        <span class="number py-5 counter" >100</span><br>
                         <span class="comment-0">Pizza Branches</span>
                     </div>
                     <div class="col-md-2 full-case text-center">
@@ -181,7 +181,7 @@
                             </div>
                             <div class="icon-content position-relative mb-3 ms-5"></div>
                         </div>
-                        <span class="number py-5" data-val="85">000</span><br>
+                        <span class="number py-5 counter" >85</span><br>
                         <span class="comment-0">Number of Awards</span>
                     </div>
                     <div class="col-md-2 full-case text-center">
@@ -191,7 +191,7 @@
                             </div>
                             <div class="icon-content mb-3 position-relative ms-5"></div>
                         </div>
-                        <span class="number py-5" data-val="1057">000</span><br>
+                        <span class="number py-5 counter" >1057</span><br>
                         <span class="comment-0">Happy Customer</span>
                     </div>
                     <div class="col-md-2 full-case text-center">
@@ -201,7 +201,7 @@
                             </div>
                             <div class="icon-content mb-3 position-relative ms-5"></div>
                         </div>
-                        <span class="number py-5" data-val="900">000</span><br>
+                        <span class="number py-5 counter">900</span><br>
                         <span class="comment-0">Staff</span>
         
                     </div>
@@ -304,9 +304,23 @@
     </section>
       <script src="vendor/js/bootstrap.bundle.min.js"></script>
       <script src="vendor/js/wow.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+    integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <script src="assets/js/js.js"></script>
       <script>
         new WOW().init();
+      </script>
+      <script>
+        $('.counter').counterUp({
+        delay: 10,
+        time: 4000
+    });
       </script>
 </body>
 </html>
